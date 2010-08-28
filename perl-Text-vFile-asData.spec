@@ -1,5 +1,5 @@
 %define upstream_name    Text-vFile-asData
-%define upstream_version 0.06
+%define upstream_version 0.07
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -23,15 +23,15 @@ Text::vFile::asData - parse vFile formatted files into data structures
 %setup -q -n Text-vFile-asData-%{upstream_version}
 
 %build
-%{__perl} Build.PL installdirs=vendor
-./Build
+%{__perl} Makefile.PL INSTALLDIRS=vendor
+%make
 
 %check
-./Build test
+%make test
 
 %install
-%{__rm} -rf %{buildroot}
-./Build install destdir=%{buildroot}
+rm -rf %buildroot
+%makeinstall_std
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -40,6 +40,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc Changes META.yml
 %{perl_vendorlib}/Text/*
-%{_bindir}/*
-%{_mandir}/man1/*
 %{_mandir}/man3/*
