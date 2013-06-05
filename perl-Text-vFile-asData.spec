@@ -2,14 +2,14 @@
 %define upstream_version 0.07
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.08
+Release:	1
 
 Summary:	Parse vFile formatted files into data structures
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Text/Text-vFile-asData-%{upstream_version}.tar.gz
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Text/Text-vFile-asData-0.08.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Class::Accessor::Chained)
@@ -74,3 +74,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Wed May 23 2007 Michael Scherer <misc@mandriva.org> 0.05-1mdv2008.0
 - First Mandriva package
+
