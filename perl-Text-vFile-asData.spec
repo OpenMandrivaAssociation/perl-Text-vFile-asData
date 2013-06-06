@@ -1,6 +1,5 @@
 %define upstream_name    Text-vFile-asData
-%define upstream_version 0.07
-
+%define upstream_version 0.08
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.08
 Release:	1
