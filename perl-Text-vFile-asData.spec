@@ -2,7 +2,7 @@
 %define upstream_version 0.08
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.08
-Release:	2
+Release:	3
 
 Summary:	Parse vFile formatted files into data structures
 License:	GPL+ or Artistic
