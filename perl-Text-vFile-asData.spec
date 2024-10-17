@@ -7,7 +7,7 @@ Release:	3
 Summary:	Parse vFile formatted files into data structures
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Text/Text-vFile-asData-0.08.tar.gz
 
 BuildRequires:	perl-devel
