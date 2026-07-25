@@ -1,14 +1,14 @@
 %define upstream_name    Text-vFile-asData
 %define upstream_version 0.08
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.08
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	Parse vFile formatted files into data structures
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Text/Text-vFile-asData-0.08.tar.gz
+Url:		https://metacpan.org/dist/Text-vFile-asData
+Source0:	https://cpan.metacpan.org/authors/id/R/RC/RCLAMP/Text-vFile-asData-0.08.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
