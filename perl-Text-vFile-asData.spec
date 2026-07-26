@@ -1,8 +1,7 @@
 %define upstream_name    Text-vFile-asData
-%define upstream_version 0.08
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	0.08
+Release:	5
 
 Summary:	Parse vFile formatted files into data structures
 License:	GPL+ or Artistic
@@ -20,7 +19,7 @@ BuildArch:	noarch
 Text::vFile::asData - parse vFile formatted files into data structures
 
 %prep
-%setup -q -n Text-vFile-asData-%{upstream_version}
+%setup -q -n Text-vFile-asData-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -49,9 +48,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 0.50.0-1mdv2010.0
 + Revision: 406192
-- rebuild using %%perl_convert_version
-
-* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.05-4mdv2009.0
+- rebuild using %0.08 Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.05-4mdv2009.0
 + Revision: 258623
 - rebuild
 
